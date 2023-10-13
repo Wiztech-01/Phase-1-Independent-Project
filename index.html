@@ -34,11 +34,25 @@
             <!-- for visualisation while editing codes -->
             <div class="recipe-image">
                 <img style="border-radius: 15px;" src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chickpea-fajitas-6db7b32.jpg?resize=768,574" alt="">
-
+                <div id="comments" >
+                    <h2>Comments</h2>
+                    <div id="comment-form">
+                        <textarea id="comment-input" placeholder="Enter your comment here..."></textarea>
+                        <button id="comment-submit" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Submit</button>
+                    </div>
+                    <!-- comment list container-->
+                    <div id="comment-list">
+                    </div>
+                </div>  
             </div>
         </div>
 
     </div>
 </body>
+<footer>
+    <div class="copyright">
+            © 2023 Wiztech-01. All Rights Reserved.
+        </div>
+</footer>
 <script src="./index.js"></script>
 </html>

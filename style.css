@@ -10,7 +10,7 @@ body {
     background-repeat: no-repeat;
 }
 .label{
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
 }
 .container{
@@ -45,6 +45,11 @@ body {
 .recipe-image{
     height: 10cm;
     width: 20cm;
+    display:block;
+    color: beige;
+    justify-content:space-around;
+}
+.comments{
     display:block;
     color: beige;
     justify-content:space-around;
