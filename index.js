@@ -1,8 +1,10 @@
-document.addEventListener("DOMContentLoaded", (e) => {
-    e.preventDefault();
+document.addEventListener("DOMContentLoaded", () => {
   
     const foodList = document.querySelector(".food-list");
     const recipeImage = document.querySelector(".recipe-image");
+    const commentInput = document.getElementById("comment-input");
+    const commentSubmitButton = document.getElementById("comment-submit");
+    const commentList = document.getElementById("comment-list");
   
     // Function to fetch meal data
     function fetchMealData() {
@@ -39,6 +41,32 @@ document.addEventListener("DOMContentLoaded", (e) => {
   
     // Call the function to fetch and display meal data
     fetchMealData();
+
+    function createCommentElement(commentData) {
+        const commentDiv = document.createElement("div");
+        commentDiv.classList.add("comment");
+
+const commentArea = document.createElement("p");
+commentArea.textContent = commentData.text;
+
+const actionsDiv = document.createElement("div");
+actionsDiv.classList.add("actions");
+
+const editButton = createButton("Edit", () => {
+    editInput.classList.remove("hidden");
+    editInput.value = commentData.text;
+    editInput.focus();
+    editInput.addEventListener("keydown", (e) => {
+        if (e.key == "Enter") {
+            editComment(commentData, editInput.value);
+        }
+    });
+});
+
+
+    }
+
+
   });
   
   
