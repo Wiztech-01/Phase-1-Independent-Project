@@ -22,16 +22,13 @@ body {
 }
 
 .recipe {
-    margin: 0 auto;
-    padding: 3px;
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
     text-align: center;
   }
 
-.search-result {
-    /* border: solid blue; */
-}
 .food-list {
     color: aliceblue;
     text-align: left;
@@ -43,6 +40,7 @@ body {
     display:block;
     color: beige;
     justify-content:space-around;
+    margin: 50px;
 }
 .comments{
     display:block;
