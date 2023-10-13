@@ -1,4 +1,5 @@
-[
+{ 
+    "meals":[
     {
         "id": "52854",
         "strMeal": "Pancakes",
@@ -139,4 +140,5 @@
         "strMealThumb": "https://www.themealdb.com/images/media/meals/rpvptu1511641092.jpg",
         "like": false
     }
-]
+    ]
+}

@@ -38,10 +38,14 @@ body {
     /* border: solid yellow; */
 }
 .form {
+    text-align:center;
+    flex-direction: row;
     /* border: solid green; */
 }
 .recipe-image{
     height: 10cm;
     width: 20cm;
-  }
-
+    display:block;
+    color: beige;
+    justify-content:space-around;
+}
