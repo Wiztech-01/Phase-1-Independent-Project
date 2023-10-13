@@ -1,0 +1,47 @@
+* {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+body {
+    background-image: url(https://c0.wallpaperflare.com/preview/184/811/591/blur-bread-rolls-counter-cup.jpg);
+    position: relative;
+    background-size: cover;
+      /* Full height */
+    height: 100%;
+    background-repeat: no-repeat;
+}
+.label{
+    color: white;
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* border: solid white; */
+}
+
+.recipe {
+    margin: 0 auto;
+    padding: 3px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+.search-result {
+    /* border: solid blue; */
+}
+.food-list {
+    color: aliceblue;
+    text-align: left;
+    /* border: solid yellow; */
+}
+.form {
+    /* border: solid green; */
+}
+.recipe-image{
+    height: 10cm;
+    width: 20cm;
+  }
+
